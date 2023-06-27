@@ -7,3 +7,4 @@ xgboost==1.7.6
 lightgbm==3.3.5
 catboost==1.2
 dvc==2.58.2
+dvc_gdrive==2.20.0
