@@ -1,0 +1,8 @@
+pandas==2.0.2
+wget==3.2
+pyarrow
+mlflow
+scikit-learn
+xgboost
+lightgbm
+catboost
