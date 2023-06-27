@@ -1,3 +1,5 @@
 .venv
 artifacts/
 data/
+/data
+/artifacts
