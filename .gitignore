@@ -2,4 +2,4 @@
 artifacts/
 data/
 /data
-/artifacts
+/mlflow
