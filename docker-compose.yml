@@ -7,4 +7,19 @@ services:
       - "50000:5000"
     volumes:
       - ./mlflow:/mlflow
+    networks:
+      - nyc-taxi
     command: mlflow server --backend-store-uri sqlite:///mlflow/mlflow.db --host 0.0.0.0 --port 5000 --artifacts-destination /mlflow/artifacts
+  fast-api-app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: fast-api-app
+    ports:
+      - "8000:8000"
+    networks:
+      - nyc-taxi
+networks:
+  nyc-taxi:
+    name: nyc-taxi
+    driver: bridge

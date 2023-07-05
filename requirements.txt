@@ -11,3 +11,5 @@ dvc_gdrive==2.20.0
 matplotlib==3.7.1
 seaborn==0.12.2
 hyperopt==0.2.7
+fastapi==0.99.1
+uvicorn==0.22.0
